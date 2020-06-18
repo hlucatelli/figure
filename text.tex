@@ -1,0 +1,31 @@
+\pdfcompresslevel0
+\nonstopmode
+\documentclass{article}
+\newcommand{\Ipechar}[1]{\unichar{#1}}
+\newcommand{\IpePageTitle}[1]{#1}
+\usepackage{color}
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{green}{rgb}{0,1,0}
+\definecolor{blue}{rgb}{0,0,1}
+\definecolor{yellow}{rgb}{1,1,0}
+\definecolor{gray1}{gray}{0.125}
+\definecolor{gray2}{gray}{0.25}
+\definecolor{gray3}{gray}{0.375}
+\definecolor{gray4}{gray}{0.5}
+\definecolor{gray5}{gray}{0.625}
+\definecolor{gray6}{gray}{0.75}
+\definecolor{gray7}{gray}{0.875}
+
+
+\pagestyle{empty}
+\newcount\bigpoint\dimen0=0.01bp\bigpoint=\dimen0
+\begin{document}
+\begin{picture}(500,500)
+\setbox0=\hbox{\normalsize
+\color[cmyk]{0,0,0,0}%
+$$r$$%
+}
+\count0=\dp0\divide\count0 by \bigpoint
+\pdfxform attr{/IpeId /05c135e0 /IpeStretch 1 /IpeDepth \the\count0}0\put(0,0){\pdfrefxform\pdflastxform}
+\end{picture}
+\end{document}
